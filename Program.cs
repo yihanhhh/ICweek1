@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Week1ObjectOriented.Classes;
 
-var square = new Square(10);
+var square = new Square(1);
 
 try
 {
