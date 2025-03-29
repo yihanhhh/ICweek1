@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Week1ObjectOriented.Classes;
 
-var square = new Square(1);
+var square = new Square(10);
 
 try
 {
@@ -20,7 +20,7 @@ catch(Exception ex)
 
 
 
-var circle = new Circle();
+var circle = new Circle(2);
 
 ShapeColourHelper.AddColour(circle);
 
@@ -35,6 +35,12 @@ Console.WriteLine(square.Colour);
 ShapeColourHelper.ChangeColour(square);
 
 Console.WriteLine(square.Colour);
+
+var triangle = new Triangle();
+
+ShapeColourHelper.AddColour(triangle);
+Console.WriteLine(triangle.Colour);
+
 
 
 Console.ReadLine();
