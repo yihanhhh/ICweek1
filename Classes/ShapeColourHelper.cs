@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 using Week1ObjectOriented.Interfaces;
 
 namespace Week1ObjectOriented.Classes
@@ -20,5 +20,20 @@ namespace Week1ObjectOriented.Classes
             return s;
         }
 
+        public static Shape RandomColour(Shape s)
+        {
+
+            Random random = new Random();
+            string[] colours = { "Yellow", "Red", "Blue", "Green", "Orange" };
+
+
+            int randomIndex = random.Next(5);
+
+
+            s.Colour = colours[randomIndex];
+
+            return s;
+
+        }
     }
 }

@@ -1,9 +1,10 @@
 ﻿namespace Week1ObjectOriented.Interfaces
 {
-    public interface IFaces
+    public interface IShape
     {
 
-        int GetFaces();
+        int GetArea();
 
     }
+
 }
